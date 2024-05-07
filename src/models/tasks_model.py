@@ -7,7 +7,7 @@ from sqlalchemy import (
     String, DateTime
 )
 
-from src.db import Base
+from ..db import Base
 
 
 class Task(Base):

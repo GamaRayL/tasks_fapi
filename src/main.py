@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 
-from . import db, schemas, crud
+from . import schemas, crud, db
 
 db.create_database()
 
