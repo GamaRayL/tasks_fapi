@@ -4,7 +4,6 @@ from pydantic import BaseModel, field_validator
 
 
 class Task(BaseModel):
-    id: int
     x: int
     y: int
     operator: str
@@ -20,3 +19,7 @@ class Task(BaseModel):
                 f'Ваш оператор ({value}) не соответствует: {operators}'
             )
         return value
+
+
+class TaskResult(BaseModel):
+    result: int
